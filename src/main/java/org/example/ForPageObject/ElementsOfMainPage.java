@@ -109,7 +109,6 @@ public static void clickOrderButtonBot(){
 }
     //Скрол до нижней кнопки "Заказать"
 public static void scrollToButtonBot(){
-    driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", driver.findElement(By.xpath("/html/body/div/div/div[1]/div[4]/div[2]/div[5]/button")));
 }
 public static void CookieButtonClick(){
