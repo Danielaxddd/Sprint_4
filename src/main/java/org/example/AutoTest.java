@@ -5,13 +5,13 @@ import org.example.ForPageObject.ElementsOfMainPage;
 import org.example.ForPageObject.FormAboutRentPage;
 import org.example.ForPageObject.FormForWhomScooterPage;
 import org.example.ForPageObject.PopApMakeOrderPage;
-import org.junit.Before;
+import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Test {
-    @org.junit.Test
+public class AutoTest {
+    @Test
     public void startUpDropDownListCheck(){
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
@@ -21,7 +21,7 @@ public class Test {
         mainPage.DropDownListCheck();
         driver.quit();
     }
-    @org.junit.Test
+    @Test
     public void startUpTestChromeButtonTop() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
@@ -37,7 +37,7 @@ public class Test {
         popApMakeOrderPage.FinishOrderButtonTop();
         driver.quit();
     }
-    @org.junit.Test
+    @Test
     public void startUpTestChromeButtonBot() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
@@ -55,7 +55,7 @@ public class Test {
     }
 
 
-    @org.junit.Test
+    @Test
     public void startUpFireFoxButtonTop() {
         WebDriverManager.firefoxdriver().setup();
         WebDriver driver = new FirefoxDriver();
@@ -71,7 +71,7 @@ public class Test {
         popApMakeOrderPage.FinishOrderButtonTop();
         driver.quit();
     }
-    @org.junit.Test
+    @Test
     public void startUpFireFoxButtonBot() {
         WebDriverManager.firefoxdriver().setup();
         WebDriver driver = new FirefoxDriver();
