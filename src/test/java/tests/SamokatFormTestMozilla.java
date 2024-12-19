@@ -48,6 +48,7 @@ public class SamokatFormTestMozilla extends BaseTestMozilla {
         formAboutRentPage.makeOrderFormAboutRent();
         PopApMakeOrderPage popApMakeOrderPage = new PopApMakeOrderPage(driver);
         popApMakeOrderPage.FinishOrderButtonTop();
+        popApMakeOrderPage.watchStatusIsVisible();
     }
     @Test
     public void startUpButtonBotTest() {
@@ -60,5 +61,6 @@ public class SamokatFormTestMozilla extends BaseTestMozilla {
         formAboutRentPage.makeOrderFormAboutRent();
         PopApMakeOrderPage popApMakeOrderPage = new PopApMakeOrderPage(driver);
         popApMakeOrderPage.FinishOrderButtonTop();
+        popApMakeOrderPage.watchStatusIsVisible();
     }
 }

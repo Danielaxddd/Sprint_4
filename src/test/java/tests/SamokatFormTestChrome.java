@@ -44,6 +44,7 @@ public class SamokatFormTestChrome extends BaseTestChrome {
         formAboutRentPage.makeOrderFormAboutRent();
         PopApMakeOrderPage popApMakeOrderPage = new PopApMakeOrderPage(driver);
         popApMakeOrderPage.FinishOrderButtonTop();
+        popApMakeOrderPage.watchStatusIsVisible();
     }
     @Test
     public void startUpTestButtonBotTest() {
@@ -56,6 +57,7 @@ public class SamokatFormTestChrome extends BaseTestChrome {
         formAboutRentPage.makeOrderFormAboutRent();
         PopApMakeOrderPage popApMakeOrderPage = new PopApMakeOrderPage(driver);
         popApMakeOrderPage.FinishOrderButtonTop();
+        popApMakeOrderPage.watchStatusIsVisible();
     }
 
 }
